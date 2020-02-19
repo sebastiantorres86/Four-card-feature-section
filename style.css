@@ -1,19 +1,115 @@
-html {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-    background-color: hsl(0, 0%, 98%);
+* {
+  box-sizing: border-box;
 }
 
-.pretitle, .title {
-    text-align: center;
+body{
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.pretitle {
-    font-weight: 200;
+h1{
+  font-size: 2.4em;
 }
 
-.title {
-    font-weight: 600;
+h2{
+  font-size: 1.618em;
+  color: hsl(234, 12%, 34%);
+}
+
+h3{
+  font-size: 1em;
+  line-height: 1.618em;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 1em;
+  line-height: 1.618em;
+  color: hsl(229, 6%, 66%);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 340px;
+  box-shadow:  
+  0 4px 8px rgba(0,0,0,0.07), 
+  0 8px 16px rgba(0,0,0,0.07),
+  0 16px 32px rgba(0,0,0,0.07), 
+  0 32px 64px rgba(0,0,0,0.07);
+  margin: 16px;
+  padding: 12px 16px;
+  border-radius: 5px;
+}
+
+.border-top-red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  margin-bottom: 32px;
+}
+
+.border-top-cyan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.border-top-orange {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.border-top-blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+header {
+  padding: 50px;
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.img {
+  text-align: right;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+/* Media Queries */
+@media all and (min-width: 960px) {
+  body{
+      font-size: 15px;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+  body{
+      font-size: 12px;
+  }
+}
+
+@media all and (max-width: 599px) and (min-width: 320px) {
+  body{
+      font-size: 15px;
+      margin: 0;
+  }
+
+  header {
+    padding: 50px 0;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
 }
